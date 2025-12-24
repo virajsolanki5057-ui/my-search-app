@@ -40,7 +40,6 @@ export default function Home() {
 
       const apiPage1 = page * 2 - 1;
       const apiPage2 = page * 2;
-      const data ="krishna";
 
       const [res1, res2] = await Promise.all([
         axios.get(`https://www.omdbapi.com/?s=${query}&page=${apiPage1}&apikey=${API_KEY}`),
